@@ -1,0 +1,1137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+@font-face {
+    font-family: ali;
+    src: url(./IRANSansWeb_Medium.ttf);
+}
+@font-face {
+    font-family:numberf ;
+    src: url(./IRANSansXFaNum-Medium.ttf);
+}
+@font-face {
+    font-family:yelkan ;
+    src: url(./Qs_Iranyekan.ttf);
+}
+
+
+/* start head */
+div.head {
+  width: 100%;
+  margin: 0 auto;
+}
+div.head > img {
+  width: 100%;
+  height: 45px;
+  
+  
+}
+/* End head */
+/* start import */
+div.import {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  padding: 10px 0;
+  /* background-color: lightgreen; */
+}
+div.import > div {
+  display: flex;
+  column-gap: 20px;
+  padding-right: 15px;
+}
+
+div.import > div > input {
+  background-color: lightgray;
+  position: absolute;
+  border-radius: 8px;
+  height: 30px;
+  width: 35%;
+  padding: 10px;
+  top: 5px;
+}
+
+div.import > div.sabtenam{
+  position: absolute;
+  left: 10px;
+  top: 0;
+  display: flex;
+  margin-top: 5px;
+  column-gap: 10px;
+  align-items:center;
+}
+
+div.import > div.sabtenam > a {
+  text-decoration: none;
+  font-family: yelkan;
+  background-color: white;
+  border: 1px solid;
+  color: black;
+  border-radius: 7px;
+  padding: 0  25px;
+  position: relative;
+  
+}
+div.import > div.sabtenam > a  > div > img {
+  position: absolute;
+   right: 0;
+  
+}
+div.import > div.sabtenam > div > img {
+  border-right: 2px solid gray;
+  padding-right: 10px;
+  padding-left: 2px;
+  
+}
+
+/* End import */
+
+/* start menu */
+div.menu {
+  width: 100%;
+  height: 40px;
+   /* background-color: rgb(83, 166, 83); */
+  position: relative;
+  margin: 10px auto;
+}
+.city > a {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  font-family: yelkan;
+  text-decoration: none;
+  color: gray;
+}
+div.menu > nav {
+  width: inherit;
+  height: inherit;
+}
+
+div.menu > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  line-height: 40px;
+  list-style: none;
+  font-size: 13.5px;
+  /* background-color:greenyellow; */
+  margin-top: 45px;
+  padding: 0 px;
+}
+div.menu > nav > ul > li {
+  /* background-color: #d2293d; */
+  padding: 0 11px;
+  position: relative;
+}
+/* start submenu */
+div.menu > nav > ul > li > div.submenu {
+  width: 1000px;
+  border-radius: 20px;
+  margin-right: 15px;
+  background-color:whitesmoke;
+  position: absolute;
+  right: -3px;
+  z-index: 9;
+  top: 50px;
+  display: none;
+
+}
+div.menu > nav > ul > li:hover > div.submenu {
+  display: flex;
+  justify-content: right;
+  column-gap: 60px;
+  padding-right: 10px;
+}
+div.menu > nav > ul > li:hover > div.submenu > div.first {
+  text-align: right;
+  font-family: yelkan;
+}
+div.menu > nav > ul > li:hover > div.submenu > div.secend {
+  text-align: right;
+  font-family: yelkan;
+  border-right: solid 10px rgb(185, 183, 183);
+  padding-right: 25px;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.secend > h5 {
+  color: rgb(96, 95, 95);
+  font-family: yelkan;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.third {
+  text-align: right;
+  /* background-color: palevioletred; */
+  font-family: yelkan;
+  font-family: numberf;
+}
+div.menu > nav > ul > li:hover > div.submenu > div.third > h5 {
+  color: rgb(96, 95, 95);
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.secend > a {
+  color: gray;
+  font-family: yelkan;
+  text-decoration: none;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.forth  {
+  text-align: right;
+  font-family: yelkan;
+  font-family: numberf;
+}
+
+div.menu > nav > ul > li:hover > div.submenu > div.forth > h5 {
+  color: rgb(96, 95, 95);
+  font-family: yelkan;
+  font-family: numberf;
+}
+div.menu > nav > ul > li:hover > div.submenu > div.last > h5 {
+  color: rgb(96, 95, 95);
+  font-family: yelkan;
+  font-family: numberf;
+  text-align: right;
+  font-size: 12px;
+}
+
+/* End submenu */
+
+div.menu > nav > ul > li > a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: gray;
+  font-family: yelkan;
+}
+
+div.menu > nav > ul > li > span {
+  color: gray;
+}
+
+div.menu > nav > ul > li:hover {
+  border-bottom: solid rgb(226, 67, 67) 2px;
+}
+
+/* div.menu > nav > ul > li >   span:hover {
+  color: red;
+} */
+/* End menu */
+/* start story */
+div.story {
+  width: 95%;
+  /* background-color: lightcoral; */
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+div.story > div.story1 {
+  width: 13%;
+  font-family: ali;
+  text-align: center;
+  color: brown;
+}
+
+div.story > div.story1 > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: #d2293d solid 3.1px;
+}
+/* End story */
+
+/* start swiper js */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* End swiper js */
+
+/* start mini story */
+div.ministory {
+  width: 90%;
+  /* background-color: lightseagreen; */
+  margin: 20px auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+div.ministory > div.ministory1 > h6 {
+  text-align: center;
+  font-family: ali;
+}
+
+div.ministory > div.ministory1 > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid rgb(14, 104, 100);
+  /* background-color: rgb(120, 10, 63);
+ mix-blend-mode: multiply; */
+}
+
+/* End mini story */
+
+/* start sheghftanghiz */
+div.shegheft {
+  width: 95%;
+  background-color: #ef3f55;
+  margin: 100px auto;
+  padding: 8px;
+  border-radius: 20px;
+  position: relative;
+}
+div.content {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  position: relative;
+}
+
+div.content > span {
+  display: flex;
+  color: white;
+  border-radius: 25px;
+  background-color: #ef3f55;
+  padding: 5px;
+  margin: 0 10px;
+  font-family: numberf;
+  font-size: 13px;
+}
+
+div.content > img {
+  display: flex;
+  width: 30px;
+}
+
+div.content > h3 {
+  display: flex;
+  font-size: 17px;
+  position: absolute;
+  left: 35px;
+  top: 5px;
+  font-family: numberf;
+  font-size: 14px;
+}
+div.swiper-slide > h2 {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: gray;
+  font-family: numberf;
+  font-size: 14px;
+}
+.logo {
+  background-color: rgba(255, 99, 71, 0.074);
+}
+.logo > img {
+  width: 50%;
+  margin-left: 35px;
+}
+.logo > a {
+  text-decoration: none;
+  color: white;
+  font-family: ali;
+}
+
+/* End sheghftanghiz */
+/* start shegheft-super */
+div.shegheftsuper {
+  width: 95%;
+  background-color: #c8cbd1c2;
+  margin: 80px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+div.right > div {
+  display: flex;
+  margin-right: 10px;
+}
+div.right {
+  display: flex;
+  align-items: center;
+}
+div.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 25px;
+}
+div.right > div > div > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+div.right > div > div > span {
+  font-family: numberf;
+  border-radius: 40%;
+  background-color: #ef3f55;
+  padding: 2px;
+  color: white;
+  font-size: 12.5px;
+}
+
+div.right > div > a {
+  text-decoration: none;
+  background-color: white;
+  color: rgb(77, 121, 10);
+  padding: 10px;
+  border-radius: 25px;
+  font-family: ali;
+  font-family: numberf;
+  font-size: 13px;
+}
+
+div.left > div > a {
+  text-decoration: none;
+  background-color: rgb(79, 130, 2);
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: ali;
+  font-family: numberf;
+  font-size: 12px;
+}
+
+/* End shegheft-super */
+
+/* start banner */
+div.banner {
+  width: 97%;
+  /* background-color: lightskyblue; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.banner > div.banner1 {
+  width: 20%;
+  position: relative;
+}
+div.banner > div.banner1 > img {
+  width: 100%;
+  border-radius: 25px;
+}
+div.banner > div.banner1 > a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-decoration: none;
+  padding: 0 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-family: ali;
+  color: wheat;
+  background-color: rgb(85, 82, 82);
+}
+/* End banner */
+/* start category */
+h4.daste {
+  position: absolute;
+  right: 45%;
+  font-family: ali;
+  margin-top: 40px;
+}
+div.category {
+  width: 95%;
+  /* background-color: lightslategray; */
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.category div.category1 {
+  width: 11%;
+  text-align: center;
+}
+div.category div.category1 > img {
+  width: 100%;
+}
+div.category div.category1 > h5 {
+  font-family: ali;
+}
+/* End category */
+
+/* start shop */
+div.shop {
+  width: 80%;
+  /* background-color: hotpink; */
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+div.shop > div.shop1 {
+  width: 49%;
+}
+div.shop > div.shop1 > img {
+  width: 100%;
+  border-radius: 25px;
+}
+/* End shop */
+
+/* start berand  with scorool */
+
+h4.headberand {
+  text-align: center;
+  font-family: yelkan;
+  /* background-color: #ef3f55; */
+  padding: 25px;
+  transition: all 300ms linear;
+  margin-top: 60px;
+}
+h4.headberand:hover {
+  color: brown;
+}
+
+div.berandplus {
+  width: 80%;
+  background-color: rgba(95, 90, 90, 0.892);
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* End berand  with scorool */
+
+/* start shop2 */
+div.shop2 {
+  width: 80%;
+  /* background-color: hotpink; */
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+div.shop2 > div.shop02 {
+  width: 49%;
+}
+div.shop2 > div.shop02 > img {
+  width: 100%;
+  border-radius: 25px;
+}
+/* End shop2 */
+/* start dig offer */
+div.digiofferhead {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  margin: 80px auto;
+  font-family: yelkan;
+}
+
+div.digoffer {
+  width: 95%;
+  /* background-color: lightgreen; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+div.digoffer > div {
+  width: 13.75%;
+  text-align: center;
+  font-family: ali;
+  color: gray;
+}
+
+div.digoffer > div > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* End dig offer */
+/* start grop */
+div.grop {
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px auto;
+  /* background-color: coral; */
+}
+div.grop > div.product {
+  width: 20%;
+  /* background-color: yellow; */
+  position: relative;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+div.grop > div.product > div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.grop > div.product > div > div {
+  width: 40%;
+}
+div.grop > div.product > div > div > img {
+  width: 100%;
+}
+div.grop > div.product > a {
+  text-decoration: none;
+  position: absolute;
+  right: 140px;
+  color: gray;
+  font-family: ali;
+}
+div.grop > div.product > h4,
+h6 {
+  font-family: ali;
+}
+div.grop > div.product > h6 {
+  color: gray;
+  font-size: 12px;
+}
+
+div.grop > div.product:hover > a {
+  color: blue;
+}
+/* End grop */
+/* start digiplus */
+div.digiplus {
+  width: 90%;
+  background-color: rgb(148, 27, 128);
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+div.digiplus > div.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+div.digiplus > div.right > img {
+  width: 50%;
+}
+div.digiplus > div.right > img.logo {
+  width: 100%;
+  margin-right: 30px;
+  border-radius: 30px;
+}
+div.digiplus > div.right > p {
+  font-family: ali;
+  margin-right: 30px;
+  color: white;
+  font-size: 12px;
+}
+div.digiplus > div.right > a {
+  text-decoration: none;
+  color: gray;
+  font-family: ali;
+  padding: 15px;
+  background-color: lightskyblue;
+  transition: all 300ms linear;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  font-size: 15 px;
+}
+
+div.digiplus > div.right > a:hover {
+  background-color: rgb(5, 34, 52);
+}
+div.digiplus > div.center {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  border-radius: 25px;
+  margin: 15px;
+}
+div.center > div {
+  display: flex;
+}
+div.digiplus > div.center > div > a {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  text-decoration: none;
+  font-family: ali;
+}
+div.digiplus > div.center > div > p {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  font-family: ali;
+}
+
+/* End digiplus */
+/* start Digiclub */
+div.digiclub {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #007295;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+div.digiclub > div {
+  display: flex;
+  padding: 15px 0;
+  column-gap: 100px;
+}
+
+div.digiclub > div > img {
+  width: 150px;
+  height: 80px;
+}
+
+div.digiclub > div > div {
+  width: 15%;
+  margin: 0 10px;
+}
+div.digiclub > div > div > img {
+  width: 250px;
+  height: 80px;
+}
+
+/* End Digiclub */
+/* start mostsale */
+div.mostsale {
+  width: 95%;
+  /* height: 100px; */
+  /* background-color: lightskyblue; */
+  margin: 80px auto;
+  border: solid 2px lightslategray;
+  border-radius: 25px;
+}
+div.mostsale > div.head {
+  /* background-color: lightsalmon; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+div.mostsale > div.head > a {
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+  font-family: yelkan;
+}
+div.mostsale > div.head > a:hover {
+  color: blue;
+}
+div.mostsale > div.head > h3 {
+  font-family: yelkan;
+  padding: 9px;
+  color: gray;
+}
+div.mostsale > div.head > h3 > span {
+  color: gold;
+  padding: 9px;
+}
+
+div.mostsalemain {
+  width: 100%;
+  background-color: rgba(95, 90, 90, 0.892);
+  margin: 0 auto;
+  display: flex;
+  /* padding: 2px; */
+  border-radius: 8px;
+}
+div.swiper-slide > div > div {
+  display: flex;
+}
+
+div.swiper-slide > div > div > div {
+  display: flex;
+  /* background-color: rgba(255, 255, 0, 0.581); */
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+/* the img of size */
+div.swiper-slide > div > div > div > img {
+  width: 30%;
+}
+
+div.swiper-slide > div > div > div > div {
+  display: flex;
+  padding-top: 40px;
+  column-gap: 15px;
+}
+div.swiper-slide > div > div > div > div > h3 {
+  color: rgb(53, 133, 183);
+  font-family: numberf;
+}
+div.swiper-slide > div > div > div > div > p {
+  color: gray;
+  font-family: yelkan;
+  font-size: 15px;
+  text-align: right;
+}
+/* End mostsale */
+div.logo3 {
+  width: 95%;
+  margin: 0 auto;
+}
+div.logo3 > img {
+  width: 100%;
+  border-radius: 25px;
+}
+/* start discount */
+div.discount {
+  width: 90%;
+  margin: 20px auto;
+  /* background-color: yellowgreen; */
+  margin: 60px auto;
+  border: 1px solid rgb(217, 208, 208);
+  border-radius: 15px;
+  padding: 13px;
+}
+div.discount > div.head1 {
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: rgb(50, 55, 205); */
+  height: 40px;
+  position: relative;
+}
+div.discount > div.head1 > h3 {
+  position: absolute;
+  line-height: 40px;
+  left: 38%;
+  font-family: yelkan;
+}
+div.discount > div {
+  display: flex;
+  justify-content: center;
+}
+
+div.discount > div > div {
+  width: 100%;
+}
+div.discount > div > div > img {
+  width: 60%;
+}
+div.prise > div {
+  display: flex;
+  column-gap: 40px;
+}
+div.prise > div > div {
+  display: flex;
+}
+div.prise {
+  position: relative;
+}
+.prise > p {
+  text-align: justify;
+  position: absolute;
+  left: 40px;
+  bottom: -15px;
+  text-decoration: line-through;
+  font-family: numberf;
+  color: gray;
+}
+div.prise > div > div > span {
+  color: white;
+  background-color: #d2293d;
+  border-radius: 35px;
+  padding: 2px;
+  font-family: numberf;
+}
+div.prise > div > div > p {
+  font-family: numberf;
+}
+
+/* End discount */
+/* start reads */
+div.headread {
+  width: 92%;
+  height: 30px;
+  /* background-color: lightseagreen; */
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+div.headread > h4 {
+  font-family: yelkan;
+  line-height: 30px;
+}
+div.headread > a {
+  font-family: yelkan;
+  line-height: 30px;
+  text-decoration: none;
+  color: rgb(38, 174, 227);
+  font-size: 13.5px;
+}
+div.read {
+  width: 94%;
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  column-gap: 15px;
+}
+div.read > div > div {
+  width: 85%;
+}
+div.read > div > div > img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 8px auto;
+}
+div.read > div > p {
+  color: gray;
+  font-family: yelkan;
+  text-align: right;
+  font-size: 12.5px;
+}
+/* End reads */
+/* start logo4 */
+div.logo4 {
+  width: 100%;
+  height: 40px;
+  margin: 25px auto;
+  /* background-color: lightseagreen; */
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+div.logo4 > a {
+  text-decoration: none;
+  font-family: yelkan;
+  /* background-color: yellow; */
+  border-radius: 10px;
+  color: gray;
+  border: solid 2px gray;
+  transition: all 300ms linear;
+}
+div.logo4 > a:hover {
+  color: rgb(103, 198, 229);
+  border: solid 2px rgb(103, 198, 229);
+}
+/* End logo4 */
+/* start contact */
+div.contact {
+  width: 100%;
+  /* background-color: rgb(26, 160, 98); */
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-family: yelkan;
+  font-family: numberf;
+  padding-right: 25px;
+  column-gap: 20px;
+  font-size: 12.5px;
+  color: gray;
+}
+/* End contact */
+/* start servise */
+div.servise {
+  width: 95%;
+  /* background-color: #ef3f55; */
+  margin: 0 auto;
+  display: flex;
+  font-family: yelkan;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+div.servise > a > div {
+  text-align: center;
+}
+div.servise > a {
+  text-decoration: none;
+  font-size: 12.5px;
+  color: gray;
+}
+/* End servise */
+/* start inform */
+div.inform {
+  margin: 40px 20px 0 0;
+  /* background-color: lightpink; */
+  display: flex;
+  justify-content: right;
+  column-gap: 189.5px;
+  font-family: yelkan;
+}
+div.inform > div {
+  font-family: yelkan;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+div.inform > div > div {
+  display: flex;
+  font-size: 40px;
+  column-gap: 50px;
+  margin-top: 20px;
+  color: gray;
+  border-radius: 25px;
+}
+div.inform > div > h4 {
+  color: gray;
+}
+
+div.inform > div > div.secend {
+  margin-top: 2px;
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 5px;
+}
+
+div.inform > div > div.secend > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+div.inform > div > div.secend > input {
+  border-radius: 10px;
+  width: 280px;
+}
+
+/* End inform */
+/* start app */
+div.app {
+  width: 97%;
+  background-color: #3c4b6d;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+div.app > div.right > div {
+  width: 17%;
+}
+div.app > div.right > div > img {
+  width: 100%;
+  padding: 15px;
+}
+div.app > div.right {
+  display: flex;
+  column-gap: 8px;
+}
+div.app > div.right > p {
+  font-family: yelkan;
+  color: white;
+  font-size: 23px;
+}
+div.app > div.left > div.more {
+  padding-left: 50px;
+}
+div.app > div.left > div.more > img {
+  width: 200%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* End app */
+/* start internet */
+div.internet {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+div.internet > div.right {
+  width: 70%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+div.internet > div.left {
+  width: 25%;
+  /* background-color: teal; */
+  margin: 0 auto;
+}
+div.internet > div.right > p.first {
+  color: gray;
+  font-family: yelkan;
+  font-size: 25px;
+  padding-top: 11px;
+}
+div.internet > div.right > p.secend {
+  color: gray;
+  font-family: yelkan;
+  font-size: 12px;
+}
+div.internet > div.right > p.thrid {
+  color: gray;
+  font-family: yelkan;
+  font-size: 8 px;
+}
+div.internet > div.right > a {
+  color: lightskyblue;
+  font-family: yelkan;
+  font-size: 17px;
+  text-decoration: none;
+}
+div.internet > div.left {
+  display: flex;
+}
+div.internet > div.left > div {
+  width: 30%;
+}
+div.internet > div.left > div > img {
+  width: 100%;
+  border: 2px solid rgb(192, 189, 189);
+  border-radius: 15px;
+  padding: 10px;
+}
+/* End internet */
+/* start point */
+div.point > p {
+  width: 66.5%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 80px;
+  color: gray;
+  font-family: yelkan;
+  font-size: 14px;
+}
+/* End point */
+/* start finishpart */
+
+div.finish {
+  width: 90;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 8px;
+}
+div.finish > div {
+  width: 9%;
+}
+div.finish > div > img {
+  width: 70%;
+}
+
+/* End finishpart */
